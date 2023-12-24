@@ -43,7 +43,7 @@
 => Command & Control IPs:
             89.44.9.243  , 142.234.157.246  , 45.134.20.66  , 185.220.102.253  , 37.120.238.58  , 152.89.247.207  , 198.144.121.93  , 89.163.252.230  , 45.153.160.140  , 23.106.223.97  , 139.60.161.161  ,                     146.0.77.15  , 94.232.41.155
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Vulnerabilities exploited: BlackCat ransomware has been observed to have the knowledge to exploit these five vulnerabilities: 
+# Vulnerabilities exploited: BlackCat ransomware has been observed to have the knowledge to exploit these five vulnerabilities: 
 
 CVE-2016-0099 (High)
     => A vulnerability that affects the Secondary Logon Service in Microsoft Windows. This vulnerability allows local users to gain privileges through a crafted application.
