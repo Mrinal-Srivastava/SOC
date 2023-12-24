@@ -50,14 +50,18 @@ CVE-2016-0099 (High)
     => The Secondary Logon Service in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, and Windows 10 Gold and 1511            does not properly process request handles, which allows local users to gain privileges via a crafted application, aka "Secondary Logon Elevation of Privilege Vulnerability."
 
 CVE-2019-7481 (High)
-    =>
+    =>  Vulnerability in SonicWall SMA100 allow unauthenticated user to gain read-only access to unauthorized resources. This vulnerablity impacted SMA100 version 9.0.0.3 and earlier.
+                > SonicWall a cybersecurity company that sells internet appliances for content control and network security. SonicWall products include firewalls and wireless security access points
 
 CVE-2021-31207 (High)
-CVE-2021-34473 (Critical)
-CVE-2021-34523 (Critical)
-CVE-2021-34473
-CVE-2021-34523
+    => A Microsoft Exchange Server security feature bypass vulnerability. It allows a threat actor to write files to disk by abusing a feature of the Exchange PowerShell backend.
 
+CVE-2021-34473 (Critical)
+    => A Microsoft Exchange Server Remote Code Execution Vulnerability. It's a server-side request forgery (SSRF) vulnerability that allows an attacker to force a vulnerable server to make requests to internal resources. The attacker doesn't need authentication because the requests are made by the endpoints to the backend servers. 
+
+CVE-2021-34523 (Critical)
+    => A privilege escalation vulnerability that affects Microsoft Exchange PowerShell. It's also a Microsoft Exchange Remote Code Execution vulnerability.
+    => The vulnerability allows an attacker to gain unauthorized access to the Exchange Server and escalate their privileges, potentially allowing them to take full control of the server. This can be done by sending a specially crafted HTTP request to the Exchange Server.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Recommended Mitigations:
 => Periodicaly Review domain controllers, servers, workstations, and active directories for new or unrecognized user accounts
