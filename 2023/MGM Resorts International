@@ -1,10 +1,10 @@
 # News: 
-=> In September 2023, MGM Resorts International, one of the world's largest casino operators, was hit by a cyberattack. The attack, which was carried out by the **ALPHV/BlackCat** ransomware gang, cost the           company over $100 million. The incident began on September 10, and guests reported problems with room key access, hotel amenities, and the gaming floor. 
-=> ALPHV claimed to have initially infiltrated MGM's network by exploiting vulnerabilities in the global casino owner's Okta Agent without deploying any ransomware. They gained super administrator privileges to      MGM's Okta and Global Administrator privileges to their Azure tenant
-=> VX Underground had said, "All ALPHV ransomware group did to compromise MGM Resorts was hop on LinkedIn, find an employee, then call the Help Desk. A company valued at $33,900,000,000 was defeated by a 10-         minute conversation."
+=> In September 2023, MGM Resorts International, one of the world's largest casino operators, was hit by a cyberattack. The attack, which was carried out by the **ALPHV/BlackCat** ransomware gang, cost the company over $100 million. The incident began on September 10, and guests reported problems with room key access, hotel amenities, and the gaming floor. 
+=> ALPHV claimed to have initially infiltrated MGM's network by exploiting vulnerabilities in the global casino owner's Okta Agent without deploying any ransomware. They gained super administrator privileges to MGM's Okta and Global Administrator privileges to their Azure tenant
+=> VX Underground had said, "All ALPHV ransomware group did to compromise MGM Resorts was hop on LinkedIn, find an employee, then call the Help Desk. A company valued at $33,900,000,000 was defeated by a 10-minute conversation."
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Adversary: 
-=> AlphaV is a ransomware group that also goes by the names BlackCat and Noberus. The group first appeared in November 2021 and is known for targeting major businesses, including MGM Resorts and Estée Lauder.        BlackCat is the first ransomware to be written entirely in the Rust programming language.
+=> AlphaV is a ransomware group that also goes by the names BlackCat and Noberus. The group first appeared in November 2021 and is known for targeting major businesses, including MGM Resorts and Estée Lauder.BlackCat is the first ransomware to be written entirely in the Rust programming language.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # IOCs for AlphaV's BlackCat ramsomware: #
 
