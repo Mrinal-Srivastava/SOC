@@ -1,24 +1,24 @@
 # News: 
-=> In September 2023, MGM Resorts International, one of the world's largest casino operators, was hit by a cyberattack. The attack, which was carried out by the **ALPHV/BlackCat** ransomware gang, cost the company over $100 million. The incident began on September 10, and guests reported problems with room key access, hotel amenities, and the gaming floor. 
-=> ALPHV claimed to have initially infiltrated MGM's network by exploiting vulnerabilities in the global casino owner's Okta Agent without deploying any ransomware. They gained super administrator privileges to MGM's Okta and Global Administrator privileges to their Azure tenant
-=> VX Underground had said, "All ALPHV ransomware group did to compromise MGM Resorts was hop on LinkedIn, find an employee, then call the Help Desk. A company valued at $33,900,000,000 was defeated by a 10-minute conversation."
+=> In September 2023, MGM Resorts International, one of the world's largest casino operators, was hit by a cyberattack. The attack, which was carried out by the **ALPHV/BlackCat** ransomware gang, cost the           company over $100 million. The incident began on September 10, and guests reported problems with room key access, hotel amenities, and the gaming floor. 
+=> ALPHV claimed to have initially infiltrated MGM's network by exploiting vulnerabilities in the global casino owner's Okta Agent without deploying any ransomware. They gained super administrator privileges to      MGM's Okta and Global Administrator privileges to their Azure tenant
+=> VX Underground had said, "All ALPHV ransomware group did to compromise MGM Resorts was hop on LinkedIn, find an employee, then call the Help Desk. A company valued at $33,900,000,000 was defeated by a 10-         minute conversation."
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Adversary: 
-=> AlphaV is a ransomware group that also goes by the names BlackCat and Noberus. The group first appeared in November 2021 and is known for targeting major businesses, including MGM Resorts and Estée Lauder. BlackCat is the first ransomware to be written entirely in the Rust programming language.
+=> AlphaV is a ransomware group that also goes by the names BlackCat and Noberus. The group first appeared in November 2021 and is known for targeting major businesses, including MGM Resorts and Estée Lauder.        BlackCat is the first ransomware to be written entirely in the Rust programming language.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # IOCs for AlphaV's BlackCat ramsomware: #
 
 => PowerShell scripts: 
-                amd - Copy.ps1: 861738dd15eb7fb50568f0e39a69e107
-                ipscan.ps1: 9f60dd752e7692a2f5c758de4eab3e6f
-                Run1.ps1: 09bc47d7bc5e40d40d9729cec5e39d73
+             amd - Copy.ps1: 861738dd15eb7fb50568f0e39a69e107
+             ipscan.ps1: 9f60dd752e7692a2f5c758de4eab3e6f
+             Run1.ps1: 09bc47d7bc5e40d40d9729cec5e39d73
 => Batch Scripts:
-                CheckVuln.bat: f5ef5142f044b94ac5010fd883c09aa7
-                Create-share-RunAsAdmin.bat: 84e3b5fe3863d25bb72e25b10760e861
-                LPE-Exploit-RunAsUser.bat: 9f2309285e8a8471fce7330fcade8619
-                RCE-Exploit-RunAsUser.bat: 6c6c46bdac6713c94debbd454d34efd9
-                est.bat: e7ee8ea6fb7530d1d904cdb2d9745899
-                runav.bat: 815bb1b0c5f0f35f064c55a1b640fca5
+             CheckVuln.bat: f5ef5142f044b94ac5010fd883c09aa7
+             Create-share-RunAsAdmin.bat: 84e3b5fe3863d25bb72e25b10760e861
+             LPE-Exploit-RunAsUser.bat: 9f2309285e8a8471fce7330fcade8619
+             RCE-Exploit-RunAsUser.bat: 6c6c46bdac6713c94debbd454d34efd9
+             est.bat: e7ee8ea6fb7530d1d904cdb2d9745899
+             runav.bat: 815bb1b0c5f0f35f064c55a1b640fca5
 => Executables and DLLs:
       > MD5: 
             http_x64.exe 6c2874169fdfb30846fe7ffe34635bdb
@@ -41,7 +41,23 @@
             80dd44226f60ba5403745ba9d18490eb8ca12dbc9be0a317dd2b692ec041da28
 
 => Command & Control IPs:
-            89.44.9.243  , 142.234.157.246  , 45.134.20.66  , 185.220.102.253  , 37.120.238.58  , 152.89.247.207  , 198.144.121.93  , 89.163.252.230  , 45.153.160.140  , 23.106.223.97  , 139.60.161.161  , 146.0.77.15  , 94.232.41.155
+            89.44.9.243  , 142.234.157.246  , 45.134.20.66  , 185.220.102.253  , 37.120.238.58  , 152.89.247.207  , 198.144.121.93  , 89.163.252.230  , 45.153.160.140  , 23.106.223.97  , 139.60.161.161  ,                     146.0.77.15  , 94.232.41.155
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Vulnerabilities exploited: BlackCat ransomware has been observed to have the knowledge to exploit these five vulnerabilities: 
+
+CVE-2016-0099 (High)
+    => A vulnerability that affects the Secondary Logon Service in Microsoft Windows. This vulnerability allows local users to gain privileges through a crafted application.
+    => The Secondary Logon Service in Microsoft Windows Vista SP2, Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, and Windows 10 Gold and 1511            does not properly process request handles, which allows local users to gain privileges via a crafted application, aka "Secondary Logon Elevation of Privilege Vulnerability."
+
+CVE-2019-7481 (High)
+    =>
+
+CVE-2021-31207 (High)
+CVE-2021-34473 (Critical)
+CVE-2021-34523 (Critical)
+CVE-2021-34473
+CVE-2021-34523
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Recommended Mitigations:
 => Periodicaly Review domain controllers, servers, workstations, and active directories for new or unrecognized user accounts
